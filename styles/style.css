@@ -1,0 +1,53 @@
+p{
+    color: red;
+    margin: 0 auto;
+}
+
+.blackBorder
+{
+    width: 500px;
+    border: 1px solid black;
+}
+
+
+li,
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+}
+
+.myclass
+{
+    text-shadow: 3px 3px 1px black;
+}
+
+/* picture1类下的图片属性赋予块级的居中 */
+.picture1
+{
+    display: block;
+    margin: 0 auto;
+}
+
+/* 超链接鼠标悬停时字体改为黄色 */
+a:hover
+{
+    color: yellow;
+}
+
+
+html {
+    font-size: 20px; /* px 表示“像素（pixel）”: 基础字号为 10 像素 */
+    background-color: rgb(255, 59, 190);
+    /*font-family: "Open Sans", sans-serif; /* 这应该是你从 Google Fonts 得到的其余输出。 */
+}
+
+body {
+    width: 800px;
+    margin: 20px auto;
+    background-color: #ff9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+  
+  
