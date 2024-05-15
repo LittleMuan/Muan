@@ -6,12 +6,28 @@
     <link href="styles/style.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
+    <!-- <meta http-equiv="refresh" content="3"> -->
+    <title>LittleMuan's page</title>
   </head>
 
   <body>
     <img src="images\Dirt.png" alt="My test image1" class="picture1"/>
     <p class="blackBorder">This is a dirt block</p>
+
+    <div id="current_date" >
+      <script>
+        setInterval(()=>{
+          document.getElementById("current_date").innerHTML = Date();
+        },1000)
+        </script>
+    </div>
+    <div>
+      <script>
+        date = new Date().toLocaleDateString();
+        document.write(date);
+      </script>
+      
+    </div>
 
     <h1 class="myclass">Muan's first website</h1>
     
