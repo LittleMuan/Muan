@@ -1,23 +1,24 @@
-// let myHeading = document.querySelector("h1");
-// myHeading.textContent = "Muan's first website(by js)";
-
-
 var luckyNum=8;
-if(luckyNum!=8){
+first=false
+if(luckyNum!=8 && !first){
     alert("不是幸运数")
+    first!=first
 }else{
-    alert("今天是幸运日呢\n快说谢谢兽兽沐安");
+    alert("今天是幸运日呢!\n快说谢谢兽兽沐安~");
+    first!=first
 }
 
-// html全局，body块级主体
-document.querySelector("h2").addEventListener("click", function () {
-    alert("戳h2惹!");
-});
+
+// 关于点击选择器元素时的添加监听
+// // html全局，body块级主体
+// document.querySelector("h2").addEventListener("click", function () {
+//     alert("戳h2惹!");
+// });
   
-//   ()=>  和  function()   等效为匿名函数定义
-document.querySelector("h1").addEventListener("click", ()=> {
-    alert("戳H1啦~?");
-  });
+// //   ()=>  和  function()   等效为匿名函数定义
+// document.querySelector("h1").addEventListener("click", ()=> {
+//     alert("戳H1啦~?");
+// });
 
 
 //   获取img选择器添加点击事件（匿名函数，用if判断为picture1类的图片才进行操作）
@@ -56,5 +57,5 @@ if (!localStorage.getItem("name")) {
   } else {
     let storedName = localStorage.getItem("name");
     myHeading.textContent = "今天也要开心哦，" + storedName;
-  }
+}
   

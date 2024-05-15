@@ -17,6 +17,10 @@ h1 {
     color: #00539f;
 }
 
+.mytitle1
+{
+    text-shadow: 3px 3px 1px black;
+}
 .myclass
 {
     text-shadow: 3px 3px 1px black;
@@ -34,7 +38,6 @@ a:hover
 {
     color: yellow;
 }
-
 
 html {
     font-size: 20px; /* px 表示“像素（pixel）”: 基础字号为 10 像素 */
