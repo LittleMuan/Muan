@@ -40,15 +40,45 @@ a:hover
 }
 
 html {
-    font-size: 20px; /* px 表示“像素（pixel）”: 基础字号为 10 像素 */
-    background-color: rgb(255, 59, 190);
-    /*font-family: "Open Sans", sans-serif; /* 这应该是你从 Google Fonts 得到的其余输出。 */
+    font-size: 20px;
+    /* background-color: rgb(255, 59, 190); */
+    background-color: transparent;
+    background-image: url(../images/MeteorShot.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+video{
+    position:fixed;
+    /* 视频定位方式设为固定 */
+    margin:0 0;
+    /* 视频位置 */
+    min-width: 100%;
+    min-height: 100%; 
+    left: 0;
+    top: 0;
+    size: 10%;
+    /* 不会因视频尺寸造成页面需要滚动 */
+    width:0;
+    height:0; 
+    /* 尺寸保持原视频大小 */
+    z-index: -10; 
+    /* z轴定位，小于0即可 */
+    filter: grayscale(20%);
+    /* 添加灰度蒙版，如果设定为100%则视频显示为黑白 */
+    object-fit: cover;
+}
+
+
 
 body {
     width: 800px;
-    margin: 20px auto;
-    background-color: #ff9500;
+    margin: 40px auto;
+    background-color: #fbb75682;
+    /* transparent是透明 */
+    /* background-color:transparent; */
     padding: 0 20px 20px 20px;
     border: 5px solid black;
 }
