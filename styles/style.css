@@ -43,33 +43,33 @@ html {
     font-size: 20px;
     /* background-color: rgb(255, 59, 190); */
     background-color: transparent;
-    background-image: url(../images/MeteorShot.png);
+    background-image: url(../images/StarFieldDrawDream.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-video{
+/*video{
     position:fixed;
-    /* 视频定位方式设为固定 */
+    /* 视频定位方式设为固定 *8/
     margin:0 0;
-    /* 视频位置 */
+    /* 视频位置 *8/
     min-width: 100%;
     min-height: 100%; 
     left: 0;
     top: 0;
     size: 10%;
-    /* 不会因视频尺寸造成页面需要滚动 */
+    /* 不会因视频尺寸造成页面需要滚动 *8/
     width:0;
     height:0; 
-    /* 尺寸保持原视频大小 */
+    /* 尺寸保持原视频大小 *8/
     z-index: -10; 
-    /* z轴定位，小于0即可 */
+    /* z轴定位，小于0即可 *8/
     filter: grayscale(20%);
-    /* 添加灰度蒙版，如果设定为100%则视频显示为黑白 */
+    /* 添加灰度蒙版，如果设定为100%则视频显示为黑白 *8/
     object-fit: cover;
-}
+}*/
 
 
 
