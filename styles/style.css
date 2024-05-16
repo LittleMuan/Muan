@@ -43,7 +43,7 @@ html {
     font-size: 20px;
     /* background-color: rgb(255, 59, 190); */
     background-color: transparent;
-    background-image: url(../images/StarFieldDrawDream.png);
+    background-image: url(../images/StarFieldDrawDream.webp),url(../images/StarFieldDrawDream.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
