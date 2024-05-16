@@ -1,10 +1,9 @@
-p{
+p {
     color: red;
     margin: 0 auto;
 }
 
-.blackBorder
-{
+.blackBorder {
     width: 500px;
     border: 1px solid black;
 }
@@ -17,57 +16,58 @@ h1 {
     color: #00539f;
 }
 
-.mytitle1
-{
+.mytitle1 {
     text-shadow: 3px 3px 1px black;
 }
-.myclass
-{
+
+.myclass {
     text-shadow: 3px 3px 1px black;
 }
 
 /* picture1类下的图片属性赋予块级的居中 */
-.picture1
-{
+.picture1 {
     display: block;
     margin: 0 auto;
 }
 
 /* 超链接鼠标悬停时字体改为黄色 */
-a:hover
-{
+a:hover {
     color: yellow;
 }
 
 html {
     font-size: 20px;
     background-color: rgb(255, 255, 255);
-    /* background-image: url(../images/StarFieldDrawDream.webp),url(../images/StarFieldDrawDream.png); */
+    background-image: url(../images/StarFieldDrawDream.webp)
+        /*,url(../images/StarFieldDrawDream.png)*/
+    ;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-video{
-    position:fixed;
+.bgvideo {
+    position: fixed;
     /* 视频定位方式设为固定 */
-    margin:0 0;
+    margin: 0 0;
     /* 视频位置 */
     min-width: 100%;
-    min-height: 100%; 
+    min-height: 100%;
     left: 0;
     top: 0;
     /* 不会因视频尺寸造成页面需要滚动 */
-    width:0;
-    height:0; 
+    width: 0;
+    height: 0;
     /* 尺寸保持原视频大小 */
-    z-index: -10; 
+    z-index: -10;
     /* z轴定位，小于0即可 */
     filter: grayscale(20%);
     /* 添加灰度蒙版，如果设定为100%则视频显示为黑白 */
     object-fit: cover;
 }
+
+
 
 
 
@@ -80,5 +80,3 @@ body {
     padding: 0 20px 20px 20px;
     border: 5px solid black;
 }
-  
-  
