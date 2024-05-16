@@ -50,26 +50,26 @@ html {
     background-attachment: fixed;
 }
 
-/*video{
+video{
     position:fixed;
-    /* 视频定位方式设为固定 *8/
+    /* 视频定位方式设为固定 */
     margin:0 0;
-    /* 视频位置 *8/
+    /* 视频位置 */
     min-width: 100%;
     min-height: 100%; 
     left: 0;
     top: 0;
     size: 10%;
-    /* 不会因视频尺寸造成页面需要滚动 *8/
+    /* 不会因视频尺寸造成页面需要滚动 */
     width:0;
     height:0; 
-    /* 尺寸保持原视频大小 *8/
+    /* 尺寸保持原视频大小 */
     z-index: -10; 
-    /* z轴定位，小于0即可 *8/
+    /* z轴定位，小于0即可 */
     filter: grayscale(20%);
-    /* 添加灰度蒙版，如果设定为100%则视频显示为黑白 *8/
+    /* 添加灰度蒙版，如果设定为100%则视频显示为黑白 */
     object-fit: cover;
-}*/
+}
 
 
 
