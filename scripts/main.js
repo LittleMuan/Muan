@@ -27,21 +27,15 @@ if (!localStorage.getItem("date")) {
 
 // 获取当前日期和时间
 function getDate() {
-  var nowDate=""
   date = new Date();
   week = date.getDay()
-  time = date.toLocaleTimeString().split(':');
-  hour = time[0];
-  minute = time[1];
-  second = time[2];
-  date = date.toLocaleDateString().split('-');
-  if(date.length===1){
-    date=date[0].split('/');
-  }
-  year = date[0];
-  month = date[1];
-  day = date[2];
-  nowDate = year + '/' + month + '/' + day + '/' + week + '/' + hour + '/' + minute + '/' + second;
+  hour = date.getHours();
+  minute = date.getMinutes();
+  second = date.getSeconds();
+  year=date.getFullYear();
+  month=date.getMonth()+1;
+  day=date.getDate();
+  var nowDate = year + '/' + month + '/' + day + '/' + week + '/' + hour + '/' + minute + '/' + second;
   return nowDate;
 }
 
