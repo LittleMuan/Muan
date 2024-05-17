@@ -34,7 +34,7 @@ function getDate() {
   hour = time[0];
   minute = time[1];
   second = time[2];
-  date = date.toLocaleDateString().split('/');
+  date = date.toLocaleDateString().split('/').split('-');
   year = date[0];
   month = date[1];
   day = date[2];
