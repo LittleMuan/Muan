@@ -38,8 +38,8 @@ a:hover {
 html {
     font-size: 20px;
     background-color: rgb(255, 255, 255);
-    background-image: url(../images/StarFieldDrawDream.webp)
-        /*,url(../images/StarFieldDrawDream.png)*/
+    background-image: url(../images/StarFieldDrawDream.png)
+    ,url(../images/StarFieldDrawDream.webp)
     ;
     background-repeat: no-repeat;
     background-position: center center;
