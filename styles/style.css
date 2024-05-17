@@ -1,11 +1,12 @@
 p {
-    color: red;
+    color: rgb(255, 0, 0);
     margin: 0 auto;
 }
 
 .blackBorder {
-    width: 500px;
+    width: 200px;
     border: 1px solid black;
+    margin: 0 auto;
 }
 
 
@@ -18,10 +19,9 @@ h1 {
 
 .mytitle1 {
     text-shadow: 3px 3px 1px black;
-}
-
-.myclass {
-    text-shadow: 3px 3px 1px black;
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
 }
 
 /* picture1类下的图片属性赋予块级的居中 */
@@ -38,9 +38,7 @@ a:hover {
 html {
     font-size: 20px;
     background-color: rgb(255, 255, 255);
-    background-image: url(../images/StarFieldDrawDream.png)
-    ,url(../images/StarFieldDrawDream.webp)
-    ;
+    background-image: url(../images/StarFieldDrawDream.png), url(../images/StarFieldDrawDream.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

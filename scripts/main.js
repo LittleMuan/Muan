@@ -2,7 +2,7 @@
 var welcome = ""
 // 刷新并显示日期和时间
 setInterval(function () {
-  var nowDate=getDate().split('/');
+  var nowDate = getDate().split('/');
   var l = ["日", "一", "二", "三", "四", "五", "六"]
   document.getElementById("current_date").innerHTML = nowDate[0] + "年" + nowDate[1] + "月" + nowDate[2] + "日    星期" + l[nowDate[3]] + "    " + nowDate[4] + ':' + nowDate[5] + ':' + nowDate[6];
 }, 1000)
@@ -18,9 +18,9 @@ if (!localStorage.getItem("date")) {
 } else {
   lastDate = localStorage.getItem("date").split('/');
   date = getDate().split('/');
-  if(lastDate[2]!==date[2]){
-    welcome+="新的一天！沐安说：“今天也要开心哦”\n";
-  }else{
+  if (lastDate[2] !== date[2]) {
+    welcome += "新的一天！沐安说：“今天也要开心哦”\n";
+  } else {
     // welcome+="没到新的一天\n";
   }
 }
@@ -32,9 +32,9 @@ function getDate() {
   hour = date.getHours();
   minute = date.getMinutes();
   second = date.getSeconds();
-  year=date.getFullYear();
-  month=date.getMonth()+1;
-  day=date.getDate();
+  year = date.getFullYear();
+  month = date.getMonth() + 1;
+  day = date.getDate();
   var nowDate = year + '/' + month + '/' + day + '/' + week + '/' + hour + '/' + minute + '/' + second;
   return nowDate;
 }
@@ -67,10 +67,10 @@ let myImage = document.querySelector("img");
 myImage.onclick = () => {
   let mySrc = myImage.getAttribute("src");
   let myClass = myImage.getAttribute("class")
-  if (mySrc === "images/SelectedDirt.png" && myClass === "picture1") {
-    myImage.setAttribute("src", "images/Dirt.png");
+  if (mySrc === "images/伍佰1.png" && myClass === "picture1") {
+    myImage.setAttribute("src", "images/伍佰0.png");
   } else {
-    myImage.setAttribute("src", "images/SelectedDirt.png");
+    myImage.setAttribute("src", "images/伍佰1.png");
   }
 };
 
@@ -81,55 +81,55 @@ let myButton = document.querySelector("button");
 myButton.onclick = function () {
   setUserName();
 };
-let myHeading = document.querySelector("h1");
+myHeading = document.getElementById("mytitle1");
 //定义函数
 function setUserName(ps = "") {
-  date=getDate().split('/');
+  date = getDate().split('/');
   let myName = prompt("请输入你的名字。" + ps);
   if (!myName) {
     setUserName("您没有进行输入。")
   } else {
     localStorage.setItem("name", myName);
-    var greet=""
-    if(date[4]>=6&&date[4]<9){
-      greet="早上好，"
-    }else if(date[4]>=9&&date[4]<12){
-      greet="上午好，"
-    }else if(date[4]>=12&&date[4]<14){
-      greet="中午好，"
-    }else if(date[4]>=14&&date[4]<18){
-      greet="下午好，"
-    }else if(date[4]>=18&&date[4]<22){
-      greet="晚上好，"
-    }else if(date[4]>=22&&date[4]<24){
-      greet="夜已深，早点睡觉嗷，"
-    }else{
-      greet="夜已深，早点睡觉嗷，"
+    var greet = ""
+    if (date[4] >= 6 && date[4] < 9) {
+      greet = "早上好，"
+    } else if (date[4] >= 9 && date[4] < 12) {
+      greet = "上午好，"
+    } else if (date[4] >= 12 && date[4] < 14) {
+      greet = "中午好，"
+    } else if (date[4] >= 14 && date[4] < 18) {
+      greet = "下午好，"
+    } else if (date[4] >= 18 && date[4] < 22) {
+      greet = "晚上好，"
+    } else if (date[4] >= 22 && date[4] < 24) {
+      greet = "夜已深，早点睡觉嗷，"
+    } else {
+      greet = "夜已深，早点睡觉嗷，"
     }
-    myHeading.textContent = greet+ myName;
+    myHeading.innerHTML = greet + myName;
   }
 }
 //进入页面，如果有存储名字，则调用本地存储api的getitem获取，否则prompt读入并调用setitem存储
 if (!localStorage.getItem("name")) {
   setUserName();
 } else {
-  date=getDate().split('/');
+  date = getDate().split('/');
   let storedName = localStorage.getItem("name");
-  var greet=""
-    if(date[4]>=6&&date[4]<9){
-      greet="早上好，"
-    }else if(date[4]>=9&&date[4]<12){
-      greet="上午好，"
-    }else if(date[4]>=12&&date[4]<14){
-      greet="中午好，"
-    }else if(date[4]>=14&&date[4]<18){
-      greet="下午好，"
-    }else if(date[4]>=18&&date[4]<22){
-      greet="晚上好，"
-    }else if(date[4]>=22&&date[4]<24){
-      greet="夜已深，早点睡觉嗷，"
-    }else{
-      greet="夜已深，早点睡觉嗷，"
-    }
-  myHeading.textContent = greet + storedName;
+  var greet = ""
+  if (date[4] >= 6 && date[4] < 9) {
+    greet = "早上好，"
+  } else if (date[4] >= 9 && date[4] < 12) {
+    greet = "上午好，"
+  } else if (date[4] >= 12 && date[4] < 14) {
+    greet = "中午好，"
+  } else if (date[4] >= 14 && date[4] < 18) {
+    greet = "下午好，"
+  } else if (date[4] >= 18 && date[4] < 22) {
+    greet = "晚上好，"
+  } else if (date[4] >= 22 && date[4] < 24) {
+    greet = "夜已深，早点睡觉嗷，"
+  } else {
+    greet = "夜已深，早点睡觉嗷，"
+  }
+  myHeading.innerHTML = greet + storedName;
 }

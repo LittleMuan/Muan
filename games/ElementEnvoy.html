@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <video loop autoplay muted class="bgvideo" src="../videos/StarFieldDrawDream.webm">your website did not support</video>
-    <head>
-        <link href="../styles/style.css" rel="stylesheet"/>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width"/>
-        <title>Element Envoy download</title>
-    </head>
-    <body>
-        <p>游戏:元素令使</p>
-        <p><a href="https://pan.baidu.com/s/1TKtoGqTRgHipvAndC1-Pqw?pwd=liu6">百度盘</a></p>
-        <p></p><a href="../source/元素令使0.1.zip" download="t">在线下载</a></p>
-        
-        <p>软件:鼠标中键隐藏桌面图标</p>
-        <p><a href="../source/中键隐藏桌面图标.exe" download="conceal icon.exe">在线下载</a></p>
-        <p><a href="../index.html">回到主页</a></p>
-    </body>
+
+<head>
+    <link href="../styles/style.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Element Envoy download</title>
+</head>
+
+<body>
+    <img src="../images/伍佰0.png" alt="can't load icon" class="picture1" />
+    <p>游戏:元素令使</p>
+    <p><a href="https://pan.baidu.com/s/1TKtoGqTRgHipvAndC1-Pqw?pwd=liu6">百度盘</a></p>
+    <p></p><a href="../source/元素令使0.1.zip" download="t">在线下载</a></p>
+    <p> </p>
+    <p>软件:鼠标中键隐藏桌面图标</p>
+    <p><a href="../source/中键隐藏桌面图标.exe" download="conceal icon.exe">在线下载</a></p>
+    <p> </p>
+    <h2><a href="../index.html">回到主页</a></h2>
+</body>
+<script>
+    //   获取img选择器添加点击事件（匿名函数，用if判断为picture1类的图片才进行操作）
+    let myImage = document.querySelector("img");
+    myImage.onclick = () => {
+        let mySrc = myImage.getAttribute("src");
+        let myClass = myImage.getAttribute("class")
+        if (mySrc === "../images/伍佰1.png" && myClass === "picture1") {
+            myImage.setAttribute("src", "../images/伍佰0.png");
+        } else {
+            myImage.setAttribute("src", "../images/伍佰1.png");
+        }
+    };
+</script>
+
 </html>

@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <video loop autoplay muted class="bgvideo" src="videos/StarFieldDrawDream.webm">your website did not support</video>
-    <head>
-        <link href="styles/style.css" rel="stylesheet" />
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width"/>
-        <title>内容页</title>
-    </head>
-    <body>
-        <img src="images/Dirt.png" />
-        <p>Muan's personal information(ul-li):</p>
-      <ul>
-        <h4>
-          <li>My name: Muan</li>
-          <li>My age: 19</li>
-          <li>My gender: male</li>
-          <li>My birth: 2004.09.25</li>
-        </h4>
+
+<head>
+  <link href="styles/style.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>内容页</title>
+</head>
+
+<body>
+  <img src="images/伍佰0.png" alt="can't load icon" class="picture1" />
+  <p>沐安安的资料卡:</p>
+  <ul>
+    <h5>
+      <li>名字 : 沐安</li>
+      <li>年龄 : 19</li>
+      <li>性别 : 保密</li>
+      <li>诞生日 : 2004.09</li>
+      <li>身高 : 180cm</li>
+      <li>体重 : 93kg</li>
+    </h5>
+  </ul>
+  <p>兴趣爱好:</p>
+  <ol>
+    <li>爱干的事：<ul>
+        <li>写代码</li>
+        <li>玩游戏</li>
+        <li>摆烂躺平+睡觉觉</li>
       </ul>
-      <p>others(ol-li):</p>
-      <ol>
-        <li>My weight: 93kg</li>
-        <li>My height: 180cm</li>
-      </ol>
-    <p>see you …</p>
-    <h2><a href="index.html">回到主页</a></h2>
-    </body>
+    </li>
+    <li>喜欢的：<ul>
+        <li>furry~毛毛</li>
+        <li>小何</li>
+      </ul>
+    </li>
+  </ol>
+  <p> </p>
+  <h2><a href="index.html">回到主页</a></h2>
+</body>
+
+<script>
+  //   获取img选择器添加点击事件（匿名函数，用if判断为picture1类的图片才进行操作）
+  let myImage = document.querySelector("img");
+  myImage.onclick = () => {
+    let mySrc = myImage.getAttribute("src");
+    let myClass = myImage.getAttribute("class")
+    if (mySrc === "images/伍佰1.png" && myClass === "picture1") {
+      myImage.setAttribute("src", "images/伍佰0.png");
+    } else {
+      myImage.setAttribute("src", "images/伍佰1.png");
+    }
+  };
+</script>
+
 </html>
